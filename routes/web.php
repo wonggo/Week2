@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('hola', function(){
-	return view('halo');
+	return view('hola');
 });
 
 route::get('bebas',function(){
