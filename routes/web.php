@@ -10,13 +10,24 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
 	$tanggal = date("d-m-Y H:i:s",time());
 	$gini = "ia gitu";
 	return view ('Welcome')
 	->with('tanggal', $tanggal)
 	->with('gini', $gini);
+});*/
+Route::get('/', function(){
+	return view('rumah');
+});
+
+Route::get('about', function(){
+	return view('about');
+});
+
+Route::get('rumah/gallery', function(){
+	return view('gallery');
 });
 
 Route::get('hola', function(){
